@@ -4,7 +4,7 @@
     Fast-PROX - utility for checking proxy in terminal under the GNU GPL V3.0 License
     ORIGINAL AUTHORS: Hasanov Abdurahmon & Ilyosiddin Kalandar
     MODIFIED BY: YellowRoseCx
-    Version: 0.2.5
+    Version: 0.3.0
 '''
 
 from sys import argv
@@ -19,7 +19,7 @@ from queue import Queue, Empty
 URL = "http://google.com"
 CMD_CLEAR_TERM = "clear" if os.name != "nt" else "cls"
 TIMEOUT = (3.05, 27)
-MAX_THREADS = 10
+MAX_THREADS = 10 # This is the max number of proxies checked at a time. Can be changed.
 goods = 0
 
 def check_proxy(proxy):
